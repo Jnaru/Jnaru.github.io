@@ -1,11 +1,11 @@
 ---
-title: systemctl
+title: Systemctl
 categories:
-- Linux
-  tags:
-- Linux
-  toc: true
-  toc_sticky: true
+  - Linux
+tags:
+  - Linux
+toc: true
+toc_sticky: true
 ---
 
 ## - systemctl이란?
