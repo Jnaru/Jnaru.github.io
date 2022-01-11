@@ -16,8 +16,19 @@ toc_sticky: true
 
 ## - systemd 서비스 파일 구성
 
-| [Unit]<br/>Dscription= ** service<br/>After=**.target<br/>Requires=**_service<br/><br/>[Service]<br/>ExecStart=/usr/bin/env php /path/to.server.php<br/><br/>[Install]<br/>WantedBy=multi-user.target |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+[Unit]
+Dscription= ** service
+After=**.target
+Requires=**_service
+
+[Service]
+ExecStart=/usr/bin/env php /path/to.server.php
+
+
+[Install]
+WantedBy=multi-user.target
+```
 
 - 위가 기본적인 서비스 파일의 구성 형태
 
