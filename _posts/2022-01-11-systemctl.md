@@ -18,9 +18,9 @@ toc_sticky: true
 
 ```
 [Unit]
-Dscription= ** service
-After=**.target
-Requires=**_service
+Dscription= ~~~ service
+After=~~.target
+Requires=~~_service
 
 [Service]
 ExecStart=/usr/bin/env php /path/to.server.php
