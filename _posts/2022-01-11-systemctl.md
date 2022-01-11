@@ -14,8 +14,6 @@ toc_sticky: true
 
 - /usr/lib/systemd/system의 .service 파일을 systemctl 명령을 통해 제어할 수 있다
 
-
-
 ## - systemd 서비스 파일 구성
 
 | [Unit]<br/>Dscription= ** service<br/>After=**.target<br/>Requires=**_service<br/><br/>[Service]<br/>ExecStart=/usr/bin/env php /path/to.server.php<br/><br/>[Install]<br/>WantedBy=multi-user.target |
@@ -29,8 +27,6 @@ toc_sticky: true
 
 - [Install]섹션은 서비스를 등록/해제 할때 사용하는 설정값이다. Alias / WantedBy, RequiredBy / Also가 있고 각각 유닛의 별칭을 지정하거나, 유닛 등록시 필요한 유닛을 지정하거나, 해당 유닛을 등록할때 같이 등록할 유닛을 설정하거나 할 수 있다
 
-
-
 ## - Systemd 유닛 컨트롤 명령어
 
 - systemctl start <unit> : 유닛 활성화
@@ -41,8 +37,6 @@ toc_sticky: true
 
 - systemctl enable <unit> : 유닛 등록
 
--  systemctl disable <unit> : 유닛 등록 해제
+- systemctl disable <unit> : 유닛 등록 해제
 
 - systemctl enable --now <unit> : 유닛 등록 후 바로 활성화
-
-
